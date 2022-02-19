@@ -1,9 +1,7 @@
-function clic(){
-
-    let r1 = document.getElementById("t1")
-    let r2 = r1.valueAsNumber
-
-    alert(r2);
-   
-
+class teste{
+    constructor(){
+        this.cabesa = 'olho';
+    }
 }
+teste = new teste();
+alert(teste.cabesa);
