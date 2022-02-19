@@ -9,25 +9,29 @@
 <body>
     <style>
         .box{
-            width: 100px;
-            height: 100px;
-            background-color: green;
-             margin-left: 0;
-        }
-        .animeEsquerda{
-            transition: 1s;
-            margin-left: 200px;
+            width: 130px;
+            height: 130px;
+            background-color: aqua;
             
         }
-        
+        .Esquerda{
+            transition: 20s;
+            background-color: rgb(255, 127, 127);
+            margin-left: 200px;
+          
+        }
     </style>
-    <div class="box" id="box"></div>
-    <div class="outro" id="outro"></div>
+    <div class="box" id="box" onclick="clic()"></div>
     <script>
-        var box = document.getElementById("box");
-        setTimeout(()=>{
-              box.classList.add('animeEsquerda');
-        },1000);
+        var box = document.getElementById('box');
+        setTimeout(() => {
+            
+        }, 1000);
+
+        function clic(){
+              box.classList.add('Esquerda');
+        }
+        
     </script>
 </body>
 </html>
