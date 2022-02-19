@@ -9,26 +9,24 @@
 <body>
     <style>
         .box{
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background-color: green;
              margin-left: 0;
         }
         .animeEsquerda{
             transition: 1s;
             margin-left: 200px;
-        }
-        .animebaixo{
-            transition: 2s;
-            background-image: linear-gradient(black,blue,orange);
             
         }
+        
     </style>
-    <div class="box"></div>
+    <div class="box" id="box"></div>
+    <div class="outro" id="outro"></div>
     <script>
-        var box = document.querySelectorAll('.box')[0];
+        var box = document.getElementById("box");
         setTimeout(()=>{
-              box.classList.add('animeEsquerda','animebaixo');
+              box.classList.add('animeEsquerda');
         },1000);
     </script>
 </body>
