@@ -14,24 +14,48 @@
             background-color: aqua;
             
         }
+        .box1{
+            width: 130px;
+            height: 130px;
+            background-color: rgb(33, 172, 56);
+            
+        }
+        .box2{
+            width: 130px;
+            height: 130px;
+            background-color: rgb(24, 26, 122);
+            
+        }
         .Esquerda{
             transition: 20s;
-            background-color: rgb(255, 127, 127);
+            background-color: rgb(246, 57, 57);
             margin-left: 200px;
-          
+        }
+        .baixo{
+            transition: 20s;
+            line-height: 100px;
+            background-color: green;
         }
     </style>
-    <div class="box" id="box" onclick="clic()"></div>
+    <div class="box" id="box" ></div>
+    <div class="box1" id="box1" ></div>
+    <div class="box2" id="box2" onclick="clic()"></div>
     <script>
         var box = document.getElementById('box');
+        var box1 = document.getElementById('box1');
+        var box2 = document.getElementById('box2');
+    
         setTimeout(() => {
-            
+           box.classList.add('Esquerda');
         }, 1000);
-
+        setTimeout(() => {
+           box1.classList.add('Esquerda');
+        }, 1000);
         function clic(){
-              box.classList.add('Esquerda');
+           box2.classList.add('Esquerda');
         }
-        
+
+
     </script>
 </body>
 </html>
