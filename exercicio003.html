@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    
-    <style>
-        .teste h1 samp{
-         font-size: 25px;
+   
+  <style>
+    .teste span{
+      font-size: 35px;
          cursor: pointer;
-         color: crimson;
-        }
-        .teste p{
-            overflow: hidden;
-            height: 0px;
-            transition: 1s;
-            background-color: aquamarine;
-        }
-    </style>
+         color: rgb(203, 20, 220);
+    }
+    .teste p{
+      overflow: hidden;
+      height: 0px;
+      transition: 10s;
+      color: bisque;
+    }
+    .mostrar{
+      height: 200px !important;
+      color: rgb(155, 104, 202) !important;
+    }
+  </style>
 
-    <div class="teste" >
-    <h1>titulo do meu texto <samp>ver mais!</samp></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in? Et quas distinctio culpa? Adipisci modi saepe porro sequi labore excepturi expedita cupiditate! Facilis culpa tenetur, accusamus sit distinctio modi?</p>
-    </div>
+  <div class="teste">
+    <h1>aperta ai na parada <span>parada!</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel architecto et enim sed ipsum? Similique dignissimos nihil quisquam quibusdam. Porro sunt voluptatum, fugit amet voluptates maiores molestias. Minus, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, recusandae veritatis maxime illum voluptates perspiciatis minima inventore facere tenetur. Asperiores fuga libero dolore, explicabo sed amet ex laudantium. Ipsa, quae.</p>
+  </div>
 
+  <script>
 
+    let v1 = document.querySelector('.teste span')
+    document.querySelector('.teste span').addEventListener('click',function(){
+   
+    let teste = document.querySelector('.teste p');
+        
+    if (teste.classList.contains('mostrar')) {
+       teste.classList.remove('mostrar');
+         v1.innerHTML = "parada!"
+    } else {
+       teste.classList.add('mostrar');
+         v1.innerHTML = "paradinha"
+    }
+
+    })
+  </script>
 </body>
 </html>
