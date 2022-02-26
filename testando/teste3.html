@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+       var xml = new XMLHttpRequest();
+     
+       xml.onload = function(){
+           if (this.status >= 200 && this.status <400) {
+                  var data = JSON.parse(this.response);
+                  alert("funciona");
+           } else {
+               console.log("deu ruim");
+               alert("funciona");
+           }
+           xml.onerror = function(){
+
+           }
+           xml.send();
+       }
+   </script>
+
+</body>
+</html>
