@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(53, 104, 30);
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        .lista-cadastro input[type=text]{
+            flex: 1;
+            height: 40px;
+            padding-left: 20px;
+        }
+        .lista-produtos-single{
+            padding: 10px 0;
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+
+        }
+        .lista-produtos-single h3{
+            flex: 1;
+            padding: 0 20px;
+        }
+        h3.price-produtos{
+            text-align: right;
+            font-size: 17px;
+        }
+        h3.price-produtos > span{
+            background-color: rgb(162, 149, 175);
+            padding: 8px 10px;
+            border-radius: 20px;
+            color: white;
+        }
+        .soma-produtos{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>LISTA DE SUPER MERCADO</h2>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text" placeholder="nome do produto..." nome="nome_produtor">
+        <input type="text" placeholder="valor dp poduto..." nome="valor_produtor">
+        <input type="submit" name="ação" value="cadastrar">
+    </div>
+    <div class="lista_produtos">
+         <div class="lista-produtos-single">
+             <h3>Saguadim</h3>
+             <h3 class="price-produtos"> <span>R$20,00</span></h3>
+         </div>
+         <div class="lista-produtos-single">
+            <h3>Saguadim</h3>
+            <h3 class="price-produtos"> <span>R$20,00</span></h3>
+        </div>
+        <div class="lista-produtos-single">
+            <h3>Saguadim</h3>
+            <h3 class="price-produtos"> <span>R$20,00</span></h3>
+        </div>
+        <div class="lista-produtos-single">
+            <h3>Saguadim</h3>
+            <h3 class="price-produtos"> <span>R$20,00</span></h3>
+        </div>
+
+        <div class="soma-produtos">
+          <h1>Total: R$100,00</h1>
+        </div>
+        
+    </div>
+    <script src=""></script>
+</body>
+</html>
