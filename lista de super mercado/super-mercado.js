@@ -44,7 +44,7 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
 document.getElementById('limpar').addEventListener('click',()=>{
     items = [];
     document.querySelector('.lista_produtos').innerHTML = "";
-    document.querySelector('.soma-produtos').innerHTML = "R$0.00=+tot";
+    document.querySelector('.soma-produtos').innerHTML = "R$0.00";
 })
 
 
