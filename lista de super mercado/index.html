@@ -51,6 +51,13 @@
         .soma-produtos{
             margin: 20px;
         }
+        #limpar{
+            background-color: rgb(99, 153, 126);
+            font-size: 20px;
+            display: flex;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -58,32 +65,21 @@
         <h2>LISTA DE SUPER MERCADO</h2>
     </header>
     <div class="lista-cadastro">
-        <input type="text" placeholder="nome do produto..." nome="nome_produtor">
-        <input type="text" placeholder="valor dp poduto..." nome="valor_produtor">
-        <input type="submit" name="ação" value="cadastrar">
+        <input type="text" placeholder="nome do produto..." nome="nome_produto">
+        <input type="number" nome="price" step="0,01">
+        <input type="submit" name="acao" value="cadastrar">
     </div>
-    <div class="lista_produtos">
-         <div class="lista-produtos-single">
-             <h3>Saguadim</h3>
-             <h3 class="price-produtos"> <span>R$20,00</span></h3>
-         </div>
-         <div class="lista-produtos-single">
-            <h3>Saguadim</h3>
-            <h3 class="price-produtos"> <span>R$20,00</span></h3>
-        </div>
-        <div class="lista-produtos-single">
-            <h3>Saguadim</h3>
-            <h3 class="price-produtos"> <span>R$20,00</span></h3>
-        </div>
-        <div class="lista-produtos-single">
-            <h3>Saguadim</h3>
-            <h3 class="price-produtos"> <span>R$20,00</span></h3>
+   
+         <div class="lista_produtos"></div>
+        
+        
+         <div class="soma-produtos">
+          <h1>Total: R$0,00</h1>
         </div>
 
-        <div class="soma-produtos">
-          <h1>Total: R$100,00</h1>
-        </div>
+        <button id="limpar">Limpar</button>
         
+        <script src="super-mercado.js"></script>
     </div>
     <script src=""></script>
 </body>
