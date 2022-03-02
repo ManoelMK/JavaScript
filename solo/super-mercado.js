@@ -5,16 +5,27 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
     var nomeProduto = document.querySelector('input[nome=nome_produto]')
     var precoProduto = document.querySelector('input[nome=price]')
     var quantidadeProduto = document.querySelector('input[nome=quantidade]')
-
+     
     var n1 = quantidadeProduto.valueAsNumber
     var n2 = precoProduto.valueAsNumber
     var n3 = n1*n2;
+    check();
 
-  items.push({
+   function check(){
+       if (n3 >= 1) {
+           
+      items.push({
       nome: nomeProduto.value,
       valor: n3
      // valor: precoProduto.value
-  });
+      });
+      
+    } else {
+           alert("algum campo estar em branco");
+       }
+   }
+
+  
 
   /*
  
@@ -40,16 +51,19 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
   })
   
   soma = soma.toFixed(2);
-  quantidadeProduto ="";
+  quantidadeProduto.value ="";
   nomeProduto.value ="";
   precoProduto.value ="";
 
   let elementoSoma = document.querySelector('.soma-produtos')
-  elementoSoma.innerHTML = 'R$'+soma
-});
+  elementoSoma.innerHTML = 'R$'+soma;
+})
+
 
 document.getElementById('limpar').addEventListener('click',()=>{
     items = [];
     document.querySelector('.lista_produtos').innerHTML = "";
     document.querySelector('.soma-produtos').innerHTML = "R$0.00";
+
 })
+
