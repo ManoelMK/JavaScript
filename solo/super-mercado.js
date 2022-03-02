@@ -13,7 +13,7 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
 
    function check(){
        if (n3 >= 1) {
-           
+
       items.push({
       nome: nomeProduto.value,
       valor: n3
@@ -24,8 +24,6 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
            alert("algum campo estar em branco");
        }
    }
-
-  
 
   /*
  
