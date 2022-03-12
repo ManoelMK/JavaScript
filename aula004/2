@@ -32,13 +32,28 @@
             </div>
     </div>
         <script>
-           
-           var pegimg = document.querySelectorAll('.player-options div > img');
-           for(var i = 0; i < pegimg.length; i++){
-           pegimg[i].addEventListener('click',function(){
-             alert("cricado");
-           })
+            var elementos = document.querySelectorAll('.player-options div > img');   
+            var playerOpt = "";
+
+            function resetOpacityPlayer(){
+                  for(var i = 0; i < elementos.length; i++){
+                  elementos[i].style.opacity = 0.3;
+                 
+               }
             }
+          
+ 
+// aqui temos o inicio do nosso gamer sempre com um click do usuario
+            for(var i = 0; i < elementos.length;  i++){
+                elementos[i].addEventListener('click',function(t){
+                 resetOpacityPlayer();
+                 t.target.style.opacity = 1;
+                 playerOpt = t.target.getAttribute('opt');
+               
+                alert(playerOpt);
+               })
+            }
+
         </script>
 
     </body>
